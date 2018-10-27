@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 14px;
+  font-style: normal;
+  color: #666;
+  font-family: "microsoft yahei","Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+a {
+  color: inherit;
+}
+em,
+i {
+  font-style: normal;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  border: none;
+  vertical-align: middle;
+}
+input,
+select,
+textarea {
+  outline: none;
+  position: relative;
+}
+textarea {
+  resize: none;
+}
+p {
+  line-height: 22px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clear {
+  clear: both;
+  height: 0px;
+  width: 100%;
+  overflow: hidden;
+}
+.position {
+  position: relative;
+}
+button,input[type="button"],input[type="submit"]{
+	border: 0;
+}

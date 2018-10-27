@@ -1,0 +1,163 @@
+<script src="data.js"></script>
+<script src="http://cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+
+
+<body>
+    <form action="http://192.168.162.249:8087/ba/bq/config/company/importCompanyQuanConfig.html" method="post" enctype="multipart/form-data">
+    <input id="aa" type="button" value="提交数据" />
+	<input id="quyButton" type="button" value="查询数据" />
+	<input id="json" type="button" value="get json" />
+	
+	<input id="sort-generalScore" type="button" value="综合得分排序" />
+	<input id="sort-starNum" type="button" value="好评度排序" />
+	<input id="search" type="button" value="筛选" />
+	<input id="changeUrl" type="button" value="变地址" />
+	
+    </form>
+</body>
+
+<script>
+$(document).ready(function(){ 
+
+	// 获取当前url
+	var cururl1=window.location.href;
+	console.log(cururl1);
+
+	console.log(1);
+	var htm = $('#aa').val();
+	console.log("htm="+htm);
+
+	var APP_ID = '2sEEFCDWhQvQRiFu7lJNm9EO-gzGzoHsz';
+	var APP_KEY = 'nM6fAYBp1f2OanAv5eFQMzy7';
+	AV.init({appId: APP_ID,appKey: APP_KEY});
+
+	$("#aa").click(function(){
+	  console.log("aa.click");
+	  commit();
+	});
+
+	$("#quyButton").click(function(){
+	  console.log("quyButton.click");
+	  query();
+	});
+	
+	$("#json").click(function(){
+	  console.log(list);
+	});
+	
+	// 综合得分排序
+	$("#sort-generalScore").click(function(){
+		console.log("---综合得分排序---");
+	    list.sort(function(a,b){
+			return b.generalScore - a.generalScore;
+		});
+
+		for (var i = 0; i < list.length; i++) {
+			console.log(list[i].generalScore);
+		}  
+	});
+	
+	// 好评度排序
+	$("#sort-starNum").click(function(){
+		console.log("---好评度排序---");
+		list.sort(function(a,b){
+			return b.starNum - a.starNum;
+		});
+		
+		for (var i = 0; i < list.length; i++) {
+　　		console.log(list[i].starNum);
+		}  
+	});
+	
+	// 筛选
+	$("#search").click(function(){
+		console.log("---筛选---");
+		var s_jg="2"; // type 1:留学机构 ，2：留学工作室
+		var s_service="北京"; // 服务地区
+		var s_agency="美国";  // 代理国家
+		var filterarray = $.grep(list,function(obj){
+			// console.log(obj.type + "--" + obj.serviceArea);
+			var a=true,b=true,c=true;
+			a = obj.type==s_jg ? true:false;
+			b = obj.serviceArea.indexOf(s_service) >= 0 ?true:false;
+			c = obj.agencyCountry.indexOf(s_agency) >= 0 ?true:false;
+			// console.log(a + "--" + b + "--" + c);
+			return obj.type==s_jg && ( obj.serviceArea.indexOf(s_service) >= 0);//筛选出大于5的 
+		});
+		console.log(filterarray.length);
+		
+		for (var i = 0; i < filterarray.length; i++) {
+　　		console.log(filterarray[i]);
+		}  
+		
+	});
+		
+	$("#changeUrl").click(function(){
+		changeURLPar();
+	});
+	console.log(3);
+
+}); 
+
+
+</script>
+
+<script>
+// 提交数据
+function commit(){
+	console.log("开始提交数据...");
+	var Forms = AV.Object.extend("StudyConsulting");
+	var formObject = new Forms();
+	
+	var name="您的姓名";
+	var phone="您的手机";
+	var email="您的邮箱123@qq.com";
+	var cooperate="机构名称";
+	formObject.save({
+		name:name,
+		phone:phone,
+		email:email,
+		cooperate:cooperate
+	}, {
+		success: function(object) {
+		  alert("感谢您的提交，我们会尽快与您取得联系！");
+		}
+	});
+	console.log("结束提交数据...");
+}
+
+// 查询数据
+function query(){
+	console.log("开始查询数据...");
+	var query = new AV.Query('StudyConsulting');
+	query.limit(10) // 允许取值范围，条数
+	query.skip(0);// 跳过 20 条结果：在翻页中每页显示数量为 10，要获取第 3 页的对象
+    query.find().then(function (results) {
+		// 成功获得实例
+		// results 查询出的数据列表（最大100条）
+		console.log(results);
+		
+		var x;
+		for (x in results){
+		    var obj = results[x];
+			console.log(obj);
+			console.log(obj.attributes);
+			console.log("姓名："+obj.attributes.name + "，手机号：" + obj.attributes.email + "，邮箱："+obj.attributes.name + "，机构名称："+obj.attributes.cooperate);
+			
+			
+		}
+		
+	}, function (error) {
+		// 异常处理
+	});
+	console.log("结束查询数据...");
+}
+
+function changeURLPar(){
+	var cururl = window.location.search.substr(1);
+	console.log(cururl);
+	// history.pushState("", "Title", "www.baidu.com/new-url");
+} 
+</script>
+ 

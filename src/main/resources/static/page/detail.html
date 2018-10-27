@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>详情页</title>
+    <link id="list" type="text/css" rel="stylesheet" href="css/common.css">
+    <link id="list" type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="http://cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
+<script src="data.js"></script>
+<script src="list.t.m.js"></script>
+<script src="detail.js"></script>
+<body>
+    <div class="header">
+        <div class="container">
+            <a href="/" class="logo">LOGO</a>
+            <div class="">
+                <ul class="nav">
+                    <li class="nav_index">
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li class="nav_service active">
+                        <a href="list.html">留学机构</a>
+                    </li>
+                    <li class="nav_vip">
+                        <a href="fillForm.html">留学评测</a>
+                    </li>
+                    <li class="nav_tutor">
+                        <a href="aboutUs.html">关于我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="pageTitle">所在位置：首页 < <span class="location">留学机构</span></h1>
+        <div class="c">
+            <div class="container_l">
+                <div class="angency_det">
+                    <div class="title">
+                        <p id="companyName">北京嘉华世达国际教育交流有限公司</p>
+                    </div>
+                    <div class="angency_wrap">
+                        <div class="det_l">
+                            <img id="imgUrl" src="http://staticresource.liuxue315.cn/image/201703091489025381055446785.jpg">
+                        </div>
+                        <div class="det_r">
+                            <p>证书编号：<span id="certificateNO">教外综资认字【2000】001号</span></p>
+                            <p>机构简称：<span id="shortCompanyName">嘉华世达</span></p>
+                            <p>分支机构： <span id="serviceArea">北京</span></p>
+                            <div class="clear"></div>
+                            <p>提供服务 : <span id="serviceItem">
+	                                        待补充
+	                                     </span></p>
+                            <div class="clear"></div>
+                            <p>办理国家： <span id="agencyCountry">美国、英国、加拿大、德国、日本、香港、新加坡、爱尔兰、韩国、荷兰、新西兰、意大利</span>
+                            </p>
+                            <div class="clear"></div>
+                            <p></p>
+                        </div>
+                    </div>
+                    <ul class="order">
+                        <li><a href="javascript:void(0)" onclick="checkLogin('/agency/getPlan?aid=1', '', '', '')">预约留学方案</a></li>
+                        <li><a href="javascript:void(0)" onclick="checkLogin('/agency/reservation?aid=1', '', '', '')">预约资深顾问</a></li>
+                    </ul>
+                    <div class="clear">
+                    </div>
+                </div>
+                <div class="angency_det_b">
+                    <ul class="angency_det_b_top">
+                        <li class="active">
+                            <a href="javascript:void(0)">公司概括</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">顾问团队</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">成功案例</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">荣誉展示</a>
+                        </li>
+                    </ul>
+                    <div class="angency_det_det">
+                        <ul class="module">
+                            <li class="active" id="companySituation">
+							
+                                <p>
+                                    首批自愿接受留学监理的合法留学中介机构。这一行动彰显了“嘉华世达”对于自身院校资源、服务能力、质量管理等综合体系的自信心，是留学中介行业借助第三方力量提升服务质量的典范。</p>
+                                <p>
+                                    北京嘉华世达国际教育交流有限公司是中国（教育部）留学服务中心直属机构，可在全国范围内从事自费留学中介、展览展示、国外学历学位认证咨询、教育信息咨询、翻译、人员培训等业务。1989年“国家教委留学服务中心”在原“国家教委出国人员北京集训部”的基础上成立了,对外称“中国留学服务中心”。中心长期从事国内外教育交流工作，是为留学人员提供留学咨询、手续办理、行前培训、档案存放、国外学历学位认证、落户派遣及工作安置等一条龙服务的权威机构。</p>
+                                <p>
+                                    2000年以前，国内自费留学市场十分混乱，先后发生了多起中国学生自费赴国外留学后上当受骗的严重事件，引发了多次自费留学退款风波。为了规范中国自费留学市场，开明渠堵暗道，树立留学行业典范，教育部批准“嘉华世达”成为中国首家获得认可的出国留学服务机构（教外综资认字《2000》1号）。</p>
+                                <p>
+                                    嘉华世达是中国留学服务行业的旗舰单位，是全国教育外事工作会议唯一留学机构服务经验交流单位，是留学服务行业最具公信力单位，媒体最信赖的留学品牌机构，北京留学服务行业协会常务理事单位。</p>
+                                <p>
+                                    嘉华世达拥有一批具有留学经历、在国际教育交流领域有丰富经验、训练有素的咨询顾问，嘉华世达以一流的服务、一流的管理、一流的形象、一流的效益，向社会公开承诺——零事故、零漏洞、零违规、零投诉，让社会监督。</p>
+                                <p>
+                                    嘉华世达具备澳大利亚移民部认可的电子签证申请资格。</p>
+                                <p>
+                                    &nbsp;</p>
+                                <p></p>
+                            </li>
+                            <li>
+                                <h3><span><img src="http://staticresource.liuxue315.cn/images/h_bg.png"></span>顾问团队<span><img src="http://staticresource.liuxue315.cn/images/h_bg01.png"></span>
+                                </h3>
+                                <a class="order" href="javascript:void(0)" onclick="checkLogin('/agency/reservation?aid=1', '', '', '')" style="float: right;">免费预约资深留学顾问&gt;&gt;</a>
+                                <div class="clear"></div>
+                                <div class="consultant">
+                                    <p><strong>林玲如</strong></p>
+                                    <p>1.帮助您实现美国P.hD梦想：申请名校、奖学金的争取、专业和研究方向的选择； 2.帮助您实现美国硕士梦想：申请名校、奖学金的争取、商科以及理工科、医学类等专业的申请、转专业跨学科申请； 3.帮助您实现美国学士梦想：申请高端本科、名校和奖学金的申请、本科双录取学校申请、转学分申请、文理学院申请、本科学校的选择和专业的选择等。
+                                    </p>
+                                    <p><strong>陈珊珊</strong></p>
+                                    <p>2005年毕业至今一直从事美国、加拿大留学咨询顾问，五年留学咨询工作经验，对美加的教育体制，院校和专业设置，申请要点，签证策略等了如指掌。在套磁和材料制作和个人背景提升等方面有很高的建树。认为留学不是目标，而是实现人生规划的一种途径。熟悉留学申请中的每一个阶段。力求把每一个学生的申请做精，做细，帮助学生拿到理想学校录取是我最终目标与价值所在。</p>
+                                    <p><strong>叶慧娇</strong></p>
+                                    <p>英语专八的水平，获得高级翻译证书，精通每间学校的申请流程，擅长培训学生与学校的电话以及现场面试，更对美国奖学金的申请有一番研究。5年多的工作经历，让我对留学行业有了更深层次的认识，也不断地帮助学生超越自我，挑战高端留学。在这几年经办的学生中，值得骄傲的是，有50%以上的学生拿到了美国的奖学金。</p>
+                                    <p><strong>罗碧莹</strong></p>
+                                    <p>2005年进入留学行业，现担任嘉华世达广东分公司咨询总监。伴随中国留学市场的成长，截止2010年4月，先后为近三百名学生制定并完成了他们的海外留学规划和职业规划，95%申请到世界前100的大学，70%申请到美国前50的大学。在数百个成功案例中积累了丰富的申请经验，深谙美国，加拿大和澳洲高中低端和奖学金申请策略及签证政策。</p>
+                                    <p><strong>陈丽文</strong></p>
+                                    <p>自06年开始从事美国，加拿大，英国留学办理，数年来送出去了300多名学生，申请成功率100%，亲自辅导学生签证，签证通过率99%。拥有丰富、全面、扎实申请，签证经验。擅长根据每个学生的实际情况，量身订造，设计可行的留学计划并提供细致周到的咨询服务。熟悉操作学校的整个申请流程，有着非常丰富的学生签证方面的经验，深受学生和学生家长信赖和赞同。我愿用尽心的服务助您实现留学的愿望。</p>
+                                    <p><strong>陈颖仪</strong></p>
+                                    <p>嘉华世达广东分公司咨询总监之一。从事留学多年，有非常扎实的个案申请经验。成功输送了上千名学生赴美/英/澳等国留学，并多次协助美国及英国院校面试以及培训等活动。了解各国的风土人情以及当地的教育体系和教育环境。积累了丰富经验，研究并总结了大量成功案例，多次为有拒签纪录的学生拿到签证，连续多年获得“先进工作者”称号。</p>
+                                    <p><strong>赵桂杰</strong></p>
+                                    <p>从事留学行业以来经手了很多成功案例，与日本多个学校保持着合作关系。遇到过各种情况的学生，都能游刃有余地解决其申请障碍。日本是一个文化多元化的国家，在日多年的留学工作经验使我对日本的教育背景有了较深的认识，对于海外生活以及各项专业就业发展更有着深切的了解，也熟知日本的签证政策和申请程序。</p>
+                                    <p><strong>胡鹏</strong></p>
+                                    <p>留学荷兰并获得马斯特里赫特大学工商管理学士学位，并在美国波士顿大学和德国亚琛工业大学参加交流学习项目。现任嘉华世达广东分公司总监。从业生涯中已经拥有办理数百名学生的成功案例的经验，包括美国，英国，荷兰，日本等的硕士，本科，专升本的申请，熟悉美国的教育体制，通晓美国的大学和申请流程，同时为学生做长期的教育规划，帮助学生评估和选择专业，最大限度的提升学生的申请背景。 工作耐心细致，对学生的申请和签证非常负责，受到学生和家长的信赖，由于和荷兰院校保持良好的沟通和长期的合作关系，轻松帮助学生拿到荷兰院校的录取并保持签证100%的通过率。
+                                    </p>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <h3 style="float: none;"><span><img src="http://staticresource.liuxue315.cn/images/h_bg.png"></span>成功案例<span><img src="http://staticresource.liuxue315.cn/images/h_bg01.png"></span></h3>
+                                <table border="" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+                                            <th style="width:10%;">姓名</th>
+                                            <th style="width:10%;">性别</th>
+                                            <th style="width:10%;">学历</th>
+                                            <th style="width:20%;">就读院校</th>
+                                            <th style="width:12%;">所学专业</th>
+                                            <th style="width:10%;">GPA</th>
+                                            <th style="width:10%;">&nbsp;&nbsp;</th>
+                                        </tr>
+                                        <tr>
+                                            <td>董同学</td>
+                                            <td>女</td>
+                                            <td>高中</td>
+                                            <td>兰州市第五十八中学</td>
+                                            <td></td>
+                                            <td>3.7</td>
+                                            <td><a href="javascript:void(0)" onclick="checkLogin('', '', 'viewAssess', [24634, '董同学'])">申请结果</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>赵同学</td>
+                                            <td>男</td>
+                                            <td>高中</td>
+                                            <td>北京市第三十五中学</td>
+                                            <td></td>
+                                            <td>3.5</td>
+                                            <td><a href="javascript:void(0)" onclick="checkLogin('', '', 'viewAssess', [24633, '赵同学'])">申请结果</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>谭同学</td>
+                                            <td>男</td>
+                                            <td>高中</td>
+                                            <td>重庆市第八中学</td>
+                                            <td></td>
+                                            <td>3.8</td>
+                                            <td><a href="javascript:void(0)" onclick="checkLogin('', '', 'viewAssess', [24632, '谭同学'])">申请结果</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>蒋同学</td>
+                                            <td>男</td>
+                                            <td>本科</td>
+                                            <td>武汉大学</td>
+                                            <td>计算机科学与技术</td>
+                                            <td>3.7</td>
+                                            <td><a href="javascript:void(0)" onclick="checkLogin('', '', 'viewAssess', [24631, '蒋同学'])">申请结果</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>张同学</td>
+                                            <td>男</td>
+                                            <td>本科</td>
+                                            <td>北京邮电大学</td>
+                                            <td>电子信息工程</td>
+                                            <td>3.4</td>
+                                            <td><a href="javascript:void(0)" onclick="checkLogin('', '', 'viewAssess', [24630, '张同学'])">申请结果</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>王同学</td>
+                                            <td>女</td>
+                                            <td>本科</td>
+                                            <td>南京大学</td>
+                                            <td>国际经济与贸易</td>
+                                            <td>3.4</td>
+                                            <td><a href="javascript:void(0)" onclick="checkLogin('', '', 'viewAssess', [24629, '王同学'])">申请结果</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>王同学</td>
+                                            <td>女</td>
+                                            <td>本科</td>
+                                            <td>江西财经大学</td>
+                                            <td>会计学</td>
+                                            <td>3.4</td>
+                                            <td><a href="javascript:void(0)" onclick="checkLogin('', '', 'viewAssess', [24628, '王同学'])">申请结果</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>刘同学</td>
+                                            <td>男</td>
+                                            <td>本科</td>
+                                            <td>南京大学</td>
+                                            <td>金融工程</td>
+                                            <td>3.7</td>
+                                            <td><a href="javascript:void(0)" onclick="checkLogin('', '', 'viewAssess', [24627, '刘同学'])">申请结果</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>徐同学</td>
+                                            <td>女</td>
+                                            <td>本科</td>
+                                            <td>黑龙江大学</td>
+                                            <td>法学</td>
+                                            <td>3.5</td>
+                                            <td><a href="javascript:void(0)" onclick="checkLogin('', '', 'viewAssess', [24626, '徐同学'])">申请结果</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>韦同学</td>
+                                            <td>男</td>
+                                            <td>本科</td>
+                                            <td>西安交通大学</td>
+                                            <td>化学工程与工艺</td>
+                                            <td>1.6</td>
+                                            <td><a href="javascript:void(0)" onclick="checkLogin('', '', 'viewAssess', [24625, '韦同学'])">申请结果</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>李同学</td>
+                                            <td>女</td>
+                                            <td>本科</td>
+                                            <td>中国人民大学</td>
+                                            <td>金融学</td>
+                                            <td>3.6</td>
+                                            <td><a href="javascript:void(0)" onclick="checkLogin('', '', 'viewAssess', [24624, '李同学'])">申请结果</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>王同学</td>
+                                            <td>女</td>
+                                            <td>本科</td>
+                                            <td>天津科技大学</td>
+                                            <td>工业工程</td>
+                                            <td>3.2</td>
+                                            <td><a href="javascript:void(0)" onclick="checkLogin('', '', 'viewAssess', [9813, '王同学'])">申请结果</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>周同学</td>
+                                            <td>男</td>
+                                            <td>本科</td>
+                                            <td>兰州大学</td>
+                                            <td>生物工程</td>
+                                            <td>2.7</td>
+                                            <td><a href="javascript:void(0)" onclick="checkLogin('', '', 'viewAssess', [9608, '周同学'])">申请结果</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>王同学</td>
+                                            <td>男</td>
+                                            <td>本科</td>
+                                            <td>北京信息科技大学</td>
+                                            <td>计算机科学与技术</td>
+                                            <td>2.3</td>
+                                            <td><a href="javascript:void(0)" onclick="checkLogin('', '', 'viewAssess', [9607, '王同学'])">申请结果</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>王同学</td>
+                                            <td>女</td>
+                                            <td>本科</td>
+                                            <td>哈尔滨理工大学</td>
+                                            <td>机械工程及自动化</td>
+                                            <td>2.8</td>
+                                            <td><a href="javascript:void(0)" onclick="checkLogin('', '', 'viewAssess', [9606, '王同学'])">申请结果</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>想看看与自己情况相似的学生都申请了什么学校吗? 马上使用<a href="http://school.liuxue315.cn/studyassess/" target="_blank"><span style="text-decoration:underline;">留学志愿参考系统</span></a>,查找与自己情况相似的案例.</p>
+                            </li>
+                            <li>
+                                <h3 style="float: none;"><span><img src="http://staticresource.liuxue315.cn/images/h_bg.png"></span>荣誉展示<span><img src="http://staticresource.liuxue315.cn/images/h_bg01.png"></span></h3>
+                                <p>
+                                </p>
+                                <p>
+                                    １. 2010年，荣获新浪“2010年度最具品牌影响力出国留学机构”称号；
+                                    <br> ２. 2010年，获“中国品牌留学服务机构20强”称号
+                                    <br> ３. 2010年，获“我最信赖的留学服务品牌”称号
+                                    <br> ４. 2010年，获2010“中国品牌留学机构”称号
+                                    <br> ５. 2010年，经理杨凌女士荣获“中国杰出女性教育家”称号
+                                    <br> ６. 2010年，获“2010年度最具品牌影响力出国留学机构”称号
+                                    <br> ７. 2010年，获“2010年度诚信留学服务机构”称号
+                                    <br> ８. 2010年，“金翼奖” 2010“十大出国留学品牌”称号
+                                    <br> ９. 2010年，获“中国十大留学专业机构”称号
+                                    <br> １０. 2010年，荣获“2010新浪五星金牌留学顾问”称号
+                                    <br> １１. 2009年，荣获“建国60周年最具影响力留学服务机构”称号
+                                    <br> １２. 2009年，荣获“中国十大留学专业机构”称号
+                                    <br> １３. 2009年，荣获“中国十佳留学机构”称号
+                                    <br> １４. 2008年，荣获“中国出国留学旗舰品牌”称号
+                                    <br> １５. 2008年，荣获“北京信誉度最高的留学机构”称号
+                                    <br> １６. 2008年，荣获“中国十佳品牌诚信留学机构”称号
+                                    <br> １７. 2008年，荣获“诚信教育机构奖”
+                                    <br> １８. 2007年，荣获“2007年度中国十佳品牌留学服务机构”称号
+                                    <br> １９. 2007年，荣获“2007教育机构竞争力年会推荐品牌”称号
+                                    <br> ２０. 2007年，荣获“2007年度教育总评榜十佳诚信留学机构”称号
+                                    <br> ２１. 2007年，荣获留学服务行业协会颁发的“示范单位”称号
+                                    <br> ２２. 2006年，荣获“中国十佳留学诚信机构”称号
+                                    <br> ２３. 2006年，荣获“2006北京著名国际化人才培养机构”称号
+                                    <br> ２４. 2006年，荣获“教育机构年度贡献奖”
+                                    <br> ２５. 2006年，成为国内首家被美国国务院授权成立EducationUSA Center的留学机构
+                                    <br> ２６. 2005年，被评选为留学行业“北京著名国际化人才培养机构”. “十佳留学诚信机构”
+                                    <br> ２７. 2005年，荣获“北京公众满意的出国留学服务机构”称号
+                                    <br> ２８. 2005年，荣获“中国品牌中介最具行业公信力奖”
+                                    <br> ２９. 2004年，首倡留学服务中介机构《诚信服务公约》
+                                    <br> ３０. 2003年，北京市教委统计留学中介服务成果，嘉华世达获得第一名
+                                    <br> ３１. 2003年，荣获“北京公众满意的出国留学服务机构”称号
+                                    <br> ３２. 2002年，成为全国教育外事工作会议唯一留学机构服务经验交流单位
+                                    <br> ３３. 2001年，成为北京留学服务行业协会首批常务理事单位</p>
+                                <p></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="angency_det_det" style="display: none" id="consultantTeam">
+                        <p>123顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队顾问团队</p>
+                    </div>
+                    <div class="angency_det_det" style="display: none" id="successfulCase">
+                        <p>成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例成功案例</p>
+                    </div>
+                    <div class="angency_det_det" style="display: none" id="honorShow">
+                        <p>荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示荣誉展示</p>
+                    </div>
+                </div>
+            </div>
+            <div class="T-m-right">
+                <!--查询中介资质口碑-->
+                <div class="T-m-qic" style="position: static;">
+                    <h1>查询中介资质口碑</h1>
+                    <form method="post" id="agency_form_right" class="nice-validator n-default" novalidate="novalidate">
+                        <p>
+                            <input type="text" value="您的姓名" onblur="if(this.value =='') {this.value = '您的姓名';this.style.color='#999';}" onfocus="if(this.value == '您的姓名'){ this.value = '';this.style.color='#333';}" class="T-l-input wid260 zizhi" name="username" id="right_username" aria-required="true">
+                        </p>
+                        <p>
+                            <input type="text" value="您的手机" onblur="if(this.value =='') {this.value = '您的手机';this.style.color='#999';}" onfocus="if(this.value == '您的手机'){ this.value = '';this.style.color='#333';}" class="T-l-input wid260 zizhi" name="phone" id="right_phone" aria-required="true">
+                        </p>
+                        <p>
+                            <input type="email" value="您的邮箱" onblur="if(this.value =='') {this.value = '您的邮箱';this.style.color='#999';}" onfocus="if(this.value == '您的邮箱'){ this.value = '';this.style.color='#333';}" class="T-l-input wid260 zizhi" name="email" id="right_email" aria-required="true">
+                        </p>
+                        <p>
+                            <input type="text" value="机构名称" onblur="if(this.value =='') {this.value = '机构名称';this.style.color='#999';}" onfocus="if(this.value == '机构名称'){ this.value = '';this.style.color='#333';}" class="T-l-input wid260 zizhi" name="agencyname" id="right_agencyname">
+                        </p>
+                        <p>
+                            <input type="button" value="提交" class="T-l-put" id="agency_form_right_button">
+                        </p>
+                        <input type="hidden" name="appid" value="107">
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $('.angency_det_b_top li').click(function(){
+        var index = $(this).index();
+        $(this).addClass('active').siblings('li').removeClass('active');
+        $('.angency_det_det').eq(index).show().siblings('.angency_det_det').hide();
+    })
+</script>
+</html>

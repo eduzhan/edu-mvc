@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>留学评估</title>
+    <link id="list" type="text/css" rel="stylesheet" href="css/common.css">
+    <link id="list" type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<script src="http://cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+<script src="fillForm.js"></script>
+<body>
+    <div class="header">
+        <div class="container">
+            <a href="/" class="logo">LOGO</a>
+            <div class="">
+                <ul class="nav">
+                    <li class="nav_index">
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li class="nav_service">
+                        <a href="list.html">留学机构</a>
+                    </li>
+                    <li class="nav_vip active">
+                        <a href="fillForm.html">留学评测</a>
+                    </li>
+                    <li class="nav_tutor">
+                        <a href="aboutUs.html">关于我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="pageTitle">所在位置：首页 < <span class="location">留学评估</span></h1>
+        <div class="c">
+        	<form>
+				<div class="formItem">
+					<h3><span class="divIcon"><img src="images/flight.png"></span><span class="boldTitle">留学意向区</span><span class="color666 line40">此区域内容仅代表您留学的个人意向，请如实填写</span><span class="mustItem">(*必填项)</span></h3>
+					<div class="formContent">
+						<div class="listItem">
+							<label class="title"><i class="mustIcon">*</i>首选留学国家:</label>
+							<span class="detail">
+								<label><input name="firstChoiceCountry" type="radio" value="美国" class="radio"/>美国 </label> 
+								<label><input name="firstChoiceCountry" type="radio" value="英国" class="radio"/> 英国</label>
+								<label><input name="firstChoiceCountry" type="radio" value="澳大利亚" class="radio"/>澳大利亚 </label>
+								<label><input name="firstChoiceCountry" type="radio" value="法国" class="radio"/> 法国</label>
+								<label><input name="firstChoiceCountry" type="radio" value="俄罗斯" class="radio"/> 俄罗斯</label>
+							</span>
+						</div>
+						<div class="listItem">
+							<label class="title"><i class="mustIcon">*</i>计划攻读学位:</label>
+							<span class="detail">
+								<label><input name="planDegree" type="radio" value="中学" class="radio"/>中学 </label> 
+								<label><input name="planDegree" type="radio" value="本科" class="radio"/> 本科</label>
+								<label><input name="planDegree" type="radio" value="硕士" class="radio"/>硕士 </label>
+								<label><input name="planDegree" type="radio" value="博士" class="radio"/> 博士</label>
+								<label><input name="planDegree" type="radio" value="其他" class="radio"/> 其他</label>
+							</span>
+						</div>
+						<div class="listItem">
+							<label class="title">首选专业方向:</label>
+							<span class="detail">
+								<label><input type="text" id="firstChoiceMajor" value="" class="text"/></label> 
+							</span>
+						</div>
+						<div class="listItem">
+							<label class="title">出国时间:</label>
+							<span class="detail">
+								<label><input name="timeAbroad" type="radio" value="越快越好" class="radio"/>越快越好 </label> 
+								<label><input name="timeAbroad" type="radio" value="半年以内" class="radio"/> 半年以内</label>
+								<label><input name="timeAbroad" type="radio" value="半年至一年" class="radio"/>半年至一年 </label>
+								<label><input name="timeAbroad" type="radio" value="一年以后" class="radio"/> 一年以后</label>
+								<label><input name="timeAbroad" type="radio" value="尚未决定" class="radio"/> 尚未决定</label>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="formItem">
+					<h3><span class="divIcon"><img src="images/text.png"></span><span class="boldTitle">专业评估区</span><span class="color666 line40">此区域为选填区，您提交的背景资料越充分，我们提供的评估越精准</span></h3>
+					<div class="formContent">
+						<div class="listItem">
+							<label class="title">毕业/就读院校:</label>
+							<span class="detail">
+								<label><input id="graduateSchool" type="text" value="" class="text"/></label> 
+							</span>
+						</div>
+						<div class="listItem">
+							<label class="title">就读年纪:</label>
+							<span class="detail">
+								<label>
+									<select value="" class="select"/>
+										<option selected="selected">初一</option>
+										<option>初二</option>
+										<option>初三</option>
+										<option>高一</option>
+										<option>高二</option>
+										<option>高三</option>
+									</select>
+								</label> 
+							</span>
+						</div>
+						<div class="listItem">
+							<label class="title">学校类型:</label>
+							<span class="detail">
+								<label><input id="schoolType" type="text" value="" class="text"/></label> 
+							</span>
+						</div>
+						<div class="listItem">
+							<label class="title">考试成绩:</label>
+							<span class="detail">
+								<label>SAT<input id="sat" type="text" value="" class="text littleText"/></label> 
+								<label>SSAT<input id="ssat" type="text" value="" class="text littleText"/></label>
+								<label>TOFEL<input id="tofel" type="text" value="" class="text littleText"/></label>
+								<label>IEITS<input id="ieits" type="text" value="" class="text littleText"/></label>
+								<label>GRE<input id="ger" type="text" value="" class="text littleText"/></label> 
+								<label>GMAT<input id="gmat" type="text" value="" class="text littleText"/></label> 
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="formItem">
+					<h3><span class="divIcon"><img src="images/person.png"></span><span class="boldTitle">联系信息</span><span class="color666 line40">请如实填写个人信息，以便我们将与您沟通评估结果。我们承诺不会将您的信息泄露给第三方</span><span class="mustItem">(*必填项)</span></h3>
+					<div class="formContent">
+						<div class="listItem">
+							<label class="title"><i class="mustIcon">*</i>姓名:</label>
+							<span class="detail">
+								<label><input id="chName" type="text" value="" class="text"/></label> 
+							</span>
+						</div>
+						<div class="listItem">
+							<label class="title"><i class="mustIcon">*</i>手机号:</label>
+							<span class="detail">
+								<label><input id="mobPhone" type="text" value="" class="text"/></label> 
+							</span>
+						</div>
+						<div class="listItem">
+							<label class="title"><i class="mustIcon">*</i>所在地区:</label>
+							<span class="detail">
+								<label>
+									<div class="gu_selectcity">
+			                    <div class="gu_city">
+			                    	<input type="hidden" name="HopeAdvisory" id="HopeAdvisory" value="">
+			                        <span id="inseachcity" class="inseachcity1">北京中关村</span>
+			                    </div>
+			                    <div class="area_school" id="selectcity_pop">
+			                        <ul>
+			                            <li><span>B</span><em><a href="javascript:;" class="cityChange select">北京中关村</a><a href="javascript:;" class="cityChange">北京国贸</a></em>
+			                            </li>
+			                            <li><span>C</span><em><a href="javascript:;" class="cityChange">成都</a><a href="javascript:;" class="cityChange">重庆</a><a href="javascript:;" class="cityChange">长沙</a><a href="javascript:;" class="cityChange">长春</a><a href="javascript:;" class="cityChange">常州</a></em>
+			                            </li>
+			                            <li><span>D</span><em><a href="javascript:;" class="cityChange">大连</a></em>
+			                            </li>
+			                            <li><span>F</span><em><a href="javascript:;" class="cityChange">福州</a></em>
+			                            </li>
+			                            <li><span>G</span><em><a href="javascript:;" class="cityChange">广州</a><a href="javascript:;" class="cityChange">贵阳</a></em>
+			                            </li>
+			                            <li><span>H</span><em><a href="javascript:;" class="cityChange">哈尔滨</a><a href="javascript:;" class="cityChange">杭州</a><a href="javascript:;" class="cityChange">合肥</a><a href="javascript:;" class="cityChange">呼和浩特</a></em>
+			                            </li>
+			                            <li><span>J</span><em><a href="javascript:;" class="cityChange">济南</a></em>
+			                            </li>
+			                            <li><span>K</span><em><a href="javascript:;" class="cityChange">昆明</a></em>
+			                            </li>
+			                        </ul>
+			                        <ul>
+			                            <li><span>L</span><em><a href="javascript:;" class="cityChange">兰州</a><a href="javascript:;" class="cityChange">洛阳</a></em>
+			                            </li>
+			                            <li><span>N</span><em><a href="javascript:;" class="cityChange">南京</a><a href="javascript:;" class="cityChange">南昌</a><a href="javascript:;" class="cityChange">南宁</a><a href="javascript:;" class="cityChange">宁波</a></em>
+			                            </li>
+			                            <li><span>Q</span><em><a href="javascript:;" class="cityChange">青岛</a></em>
+			                            </li>
+			                            <li><span>S</span><em><a href="javascript:;" class="cityChange">上海</a><a href="javascript:;" class="cityChange">沈阳</a><a href="javascript:;" class="cityChange">深圳</a><a href="javascript:;" class="cityChange">石家庄</a><a href="javascript:;" class="cityChange">苏州</a></em>
+			                            </li>
+			                            <li><span>T</span><em><a href="javascript:;" class="cityChange">天津</a><a href="javascript:;" class="cityChange">太原</a><a href="javascript:;" class="cityChange">唐山</a></em>
+			                            </li>
+			                            <li><span>W</span><em><a href="javascript:;" class="cityChange">武汉</a><a href="javascript:;" class="cityChange">无锡</a><a href="javascript:;" class="cityChange">乌鲁木齐</a><a href="javascript:;" class="cityChange">温州</a></em>
+			                            </li>
+			                         </ul>    
+			                    </div>
+			                </div>   
+								</label>
+							</span>
+						</div>
+						<div class="listItem">
+							<label class="title">性别:</label>
+							<span class="detail">
+								<label><input type="radio" name="sex" value="男" class="radio"/>男</label>
+								<label><input type="radio" name="sex" value="女" class="radio"/> 女</label>
+							</span>
+						</div>
+						<div class="listItem">
+							<label class="title">E-Mail地址:</label>
+							<span class="detail">
+								<label><input id="email" type="text" value="" class="text"/></label> 
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="submitDiv">
+					<input type="button" value="提交评估表" class="submitForm">
+				</div>
+			</form>
+        </div>
+</body>
+<script type="text/javascript">
+$('.gu_city').click(function(){
+	$('.area_school').show();
+})
+$('.area_school li a').click(function(){
+	var html = $(this).html();
+	$('.inseachcity1').html(html);
+	$('.area_school').hide()
+})
+</script>
+</html>
